@@ -6,4 +6,10 @@
 */
 
 // your code
-let factorial
+let factorial = 1
+let currentNumber = 1
+
+while (currentNumber <= 10) {
+    factorial = factorial * currentNumber;
+    currentNumber = currentNumber + 1;
+}
