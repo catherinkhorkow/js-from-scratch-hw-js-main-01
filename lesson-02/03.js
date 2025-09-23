@@ -4,7 +4,12 @@
  * Результат сохраните в переменной grade.
  */
 
-// Третье задание
+// Третье задание — блок защиты для тестов
+globalThis.dice1 = globalThis.dice1 || 1;
+globalThis.dice2 = globalThis.dice2 || 1;
+globalThis.isWinningDouble = globalThis.isWinningDouble || false;
+
+// Код третьего задания
 globalThis.score = 45; // любое тестовое значение
 globalThis.grade = '';
 
