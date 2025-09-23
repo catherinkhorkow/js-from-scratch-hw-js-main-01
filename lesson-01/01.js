@@ -2,10 +2,11 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum = 0;
-let currentNumber = 1;
+let sum = 0
+let number = 1
 
-while (currentNumber <= 20) {
-    sum = sum + currentNumber;
-    currentNumber = currentNumber + 1;
+while (number <= 20) {
+    sum = sum + number
+    number = number + 1
+    console.log(sum)
 }

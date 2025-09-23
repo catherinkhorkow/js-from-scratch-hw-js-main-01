@@ -6,10 +6,12 @@
 */
 
 // your code
-let factorial = 1
-let currentNumber = 1
 
-while (currentNumber <= 10) {
-    factorial = factorial * currentNumber;
-    currentNumber = currentNumber + 1;
+let factorial = 1
+let number = 1
+
+while (number <= 10) {
+    factorial = factorial * number
+    number = number + 1
+    console.log(factorial)
 }
