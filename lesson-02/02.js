@@ -7,6 +7,7 @@
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
 
+// Второе задание
 globalThis.dice1 = Math.floor(Math.random() * 6) + 1;
 globalThis.dice2 = Math.floor(Math.random() * 6) + 1;
 globalThis.isWinningDouble = (globalThis.dice1 === globalThis.dice2) && (globalThis.dice1 > 3);

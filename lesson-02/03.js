@@ -4,19 +4,14 @@
  * Результат сохраните в переменной grade.
  */
 
-score = 70;        // тестовое значение
-grade = '';        // объявляем глобально, сразу присваиваем пустую строку
+// Третье задание
+globalThis.score = 45; // любое тестовое значение
+globalThis.grade = '';
 
-if (score < 50) {
-    grade = 'F';
-} else if (score < 70) {
-    grade = 'D';
-} else if (score < 80) {
-    grade = 'C';
-} else if (score < 90) {
-    grade = 'B';
-} else {
-    grade = 'A';
-}
+if (globalThis.score < 50) globalThis.grade = 'F';
+else if (globalThis.score < 70) globalThis.grade = 'D';
+else if (globalThis.score < 80) globalThis.grade = 'C';
+else if (globalThis.score < 90) globalThis.grade = 'B';
+else globalThis.grade = 'A';
 
-console.log('Твоя оценка ' + grade);
+console.log('Твоя оценка ' + globalThis.grade);
