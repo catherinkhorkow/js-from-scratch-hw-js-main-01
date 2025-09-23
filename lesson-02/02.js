@@ -7,14 +7,14 @@
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
 
-dice1 = Math.floor(Math.random() * 6) + 1;
-dice2 = Math.floor(Math.random() * 6) + 1;
-isWinningDouble = (dice1 === dice2) && (dice1 > 3);
+globalThis.dice1 = Math.floor(Math.random() * 6) + 1;
+globalThis.dice2 = Math.floor(Math.random() * 6) + 1;
+globalThis.isWinningDouble = (globalThis.dice1 === globalThis.dice2) && (globalThis.dice1 > 3);
 
-console.log('Первый бросок: ' + dice1);
-console.log('Второй бросок: ' + dice2);
+console.log('Первый бросок: ' + globalThis.dice1);
+console.log('Второй бросок: ' + globalThis.dice2);
 
-if (isWinningDouble) {
+if (globalThis.isWinningDouble) {
   console.log('Выигрышный дубль!');
 } else {
   console.log('Не выигрышный дубль.');
