@@ -4,25 +4,15 @@
  * Результат сохраните в переменной grade.
  */
 
-// Третье задание — блок защиты для тестов
-globalThis.dice1 = globalThis.dice1 ?? 1;
-globalThis.dice2 = globalThis.dice2 ?? 1;
-globalThis.isWinningDouble = globalThis.isWinningDouble ?? false;
 
-// Код третьего задания
-globalThis.score = 45; // любое тестовое значение
-globalThis.grade = '';  // переменная для результата
+// Третье задание
+let score = 45; // тестовое значение, можно менять
+let grade;
 
-if (globalThis.score < 50) {
-    globalThis.grade = 'F';
-} else if (globalThis.score < 70) {
-    globalThis.grade = 'D';
-} else if (globalThis.score < 80) {
-    globalThis.grade = 'C';
-} else if (globalThis.score < 90) {
-    globalThis.grade = 'B';
-} else {
-    globalThis.grade = 'A';
-}
+if (score < 50) grade = 'F';
+else if (score < 70) grade = 'D';
+else if (score < 80) grade = 'C';
+else if (score < 90) grade = 'B';
+else grade = 'A';
 
-console.log('Твоя оценка ' + globalThis.grade);
+console.log(grade);
