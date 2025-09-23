@@ -11,12 +11,18 @@ globalThis.isWinningDouble = globalThis.isWinningDouble ?? false;
 
 // Код третьего задания
 globalThis.score = 45; // любое тестовое значение
-globalThis.grade = '';
+globalThis.grade = '';  // переменная для результата
 
-if (globalThis.score < 50) globalThis.grade = 'F';
-else if (globalThis.score < 70) globalThis.grade = 'D';
-else if (globalThis.score < 80) globalThis.grade = 'C';
-else if (globalThis.score < 90) globalThis.grade = 'B';
-else globalThis.grade = 'A';
+if (globalThis.score < 50) {
+    globalThis.grade = 'F';
+} else if (globalThis.score < 70) {
+    globalThis.grade = 'D';
+} else if (globalThis.score < 80) {
+    globalThis.grade = 'C';
+} else if (globalThis.score < 90) {
+    globalThis.grade = 'B';
+} else {
+    globalThis.grade = 'A';
+}
 
 console.log('Твоя оценка ' + globalThis.grade);
